@@ -1,0 +1,69 @@
+<!-- pembuat HTML >> Nama : MAOLIDATUL MUNTAZAH >> NIM : 245510025 -->
+<!DOCTYPE html> 
+<html>
+<head>
+    <link rel="stylesheet" href="tampilan.css">
+    <title>Sistem Laporan Laboratorium</title>
+</head>
+<body>
+
+    <h1>Lab Reporting System</h1>
+
+    <form action="simpan_data.php" method="post">
+        
+        <div>
+            <label>Nama Mahasiswa</label><br>
+            <input type="text" name="nama_mhs">
+        </div>
+        <br>
+
+        <div>
+            <label>NIM</label><br>
+            <input type="text" name="nim_mhs">
+        </div>
+        <br>
+
+        <div>
+            <label>Ruangan Lab</label><br>
+            <select name="ruangan">
+            <option value=""></option>
+            <option value="labSI">Lab SI</option>
+            <option value="labTKS">Lab TKS</option>
+            <option value="LabSecurity">Lab Security</option>
+            <option value="LabIF">Lab IF</option>
+            </select>
+        </div>
+        <br>
+
+        <div>
+            <label>Perangkat Bermasalah</label><br>
+            <select name="perangkat">
+            <option value=""></option>
+            <option value="PC">Komputer / PC</option>
+            <option value="Monitor">Monitor</option>
+            <option value="Keyboard">Keyboard / Mouse</option>
+            <option value="Jaringan">Internet / Kabel LAN</option>
+            </select>
+        </div>
+        <br>
+        
+
+        <div>
+            <label>Tanggal Kerusakan</label><br>
+            <input type="date" name="tgl_kerusakan">
+        </div>
+        <br>
+
+        <div>
+            <label>Deskripsi Kerusakan</label><br>
+            <textarea name="detail_laporan" rows="8" cols="45"></textarea>
+        </div>
+        <br>
+
+        <button type="submit">Kirim Laporan</button>
+        
+    </form>
+    <script src="script.js"></script>
+    
+</body>
+</html>
